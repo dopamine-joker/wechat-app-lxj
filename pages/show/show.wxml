@@ -1,0 +1,60 @@
+<!--pages/show/show.wxml-->
+<view class="page-body">
+  <view class="title-text">
+    疫情防控报备证明
+  </view>
+  <view class="time-view">
+    {{time}}
+  </view>
+  <view class="visit-text">
+    本页面当前访问
+    <view class="visit-time">
+      {{params.uvisit}}
+    </view>
+    次数
+  </view>
+  <view class="pic-view">
+    <image id="headpic" bindtap="selectPic" class="pic" src="{{tempFilePaths}}" mode="aspectFit"/>
+    <!-- animation="{{animationData}}" -->
+    <image animation="{{animationData}}" class="pic-pass" style="left: {{left}}px; right: {{right}}px; " src="../../img/pass.png" mode="aspectFit"/>
+  </view>
+  <view class="info-view">
+    <view>
+      姓名:  {{params.uname}}
+    </view>
+    <view>
+      学号:  {{params.uid}}
+    </view>
+    <view>
+      学院:  {{params.ucollege}}
+    </view>
+    <view>
+      班级:  {{params.uclass}}
+    </view>
+    <view>
+      出入事由:  {{params.ureason}}
+    </view>
+    <view>
+      出入时间:  {{params.utime}}
+    </view>
+    <view>
+      审批部门:  {{params.udepartment}}
+    </view>
+  </view>
+  <!-- 按钮 -->
+  <view class="btn-group">
+    <!-- <button class="btn1" style="width: 3rem;">3</button> -->
+    <view>
+      <button class="btn1" style="width: 5rem; margin-right: 5px;">再次报备</button>
+      <button class="btn2" style="width: 4rem; margin-right: 5px; margin-left: 5px;">刷新</button>
+      <button class="btn3" style="width: 4rem; margin-left: 5px;">返回</button>
+    </view>
+    <!-- <button class="btn1" style="width: 3rem;">3</button> -->
+  </view>
+
+  <!-- <text>{{extraClasses}}</text> -->
+
+</view>
+
+
+

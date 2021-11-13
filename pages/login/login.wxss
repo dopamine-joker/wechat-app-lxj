@@ -1,0 +1,8 @@
+/* pages/login/login.wxss */
+@import "../../lib/weui.wxss";
+
+.title-center{
+  display: flex;
+  justify-content: center;
+  color: black;
+}

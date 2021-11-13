@@ -1,0 +1,75 @@
+<!--pages/login/login.wxml-->
+<!-- <text>pages/login/login.wxml</text> -->
+<view class="title-center">信息填写</view>
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view>
+    <view class="page-section">
+      <view class="weui-cells__title">姓名</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input name="uname" class="weui-input" maxlength="10" placeholder="最大输入长度为10" auto-focus=""/>
+        </view>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="weui-cells__title">学号</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input name="uid" class="weui-input" maxlength="10" placeholder="最大输入长度为10" />
+        </view>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="weui-cells__title">学院</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input name="ucollege" class="weui-input" maxlength="20" placeholder="最大输入长度为20" />
+        </view>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="weui-cells__title">班级</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input name="uclass" class="weui-input" maxlength="20" placeholder="最大输入长度为20" />
+        </view>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="weui-cells__title">出入事由</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input name="ureason" class="weui-input" maxlength="20" placeholder="最大输入长度为20" />
+        </view>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="weui-cells__title">出入时间</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input name="utime" class="weui-input" placeholder="按格式填写,不做格式检查" />
+        </view>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="weui-cells__title">审批部门</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input name="udepartment" class="weui-input" maxlength="20" placeholder="最大输入长度为20" />
+        </view>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="weui-cells__title">访问次数</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input name="uvisit" class="weui-input" maxlength="20" placeholder="最大输入长度为20" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="btn-area" style="margin-top: 15px;">
+    <button formType="submit" class="weui-btn">Submit</button>
+    <button formType="reset" class="weui-btn">Reset</button>
+  </view>
+</form>

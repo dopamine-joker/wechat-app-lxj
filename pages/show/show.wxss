@@ -1,0 +1,163 @@
+/* pages/show/show.wxss */
+
+.page-body{
+}
+
+.visit-text{
+  width: 100%;
+  font-weight: 600;
+  font-size: 1rem;
+  display:flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  color: rgb(5, 0, 127);
+  align-items: baseline;
+}
+
+.visit-time{
+  font-weight: 540;
+  margin-left: 0.8rem;
+  margin-right: 1rem;
+  font-size: 3rem;
+}
+
+.title-text{
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.8rem;
+}
+
+.time-view{
+  margin-top: 0.6rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  color: red;
+  font-size: 2rem;
+}
+
+.pic-view{
+  height: 10rem;
+  width: 100%;
+  /* display: flex; */
+  text-align: center;
+  justify-content: center;
+  align-items: flex-start;
+  /* background-color: black; */
+  z-index: -1;
+  /* align-items: flex-start; */
+}
+
+.pic{
+  height: 85%;
+  z-index: 0;
+  /* position: fixed; */
+}
+
+.pic-pass{
+  /* 设置放缩点是右上角 */
+  transform-origin: right top;    
+  width: 8rem;
+  height: 8rem;
+  /* width: 90%;
+  height: 90%; */
+  z-index: 100;
+  position: absolute;
+  left: 200px;
+  top: 140px;
+  margin-top: 2rem;
+}
+
+.info-view{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* 垂直居中 */
+  align-items: center;    
+  /* background-color: cornflowerblue; */
+}
+
+.info-view > view{
+  width: 80%;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  font-size: 15px;
+  font-weight: 500;
+  /* background-color: gold; */
+}
+
+.btn-group{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 1rem;
+  /* background-color: violet; */
+}
+
+.btn-group > view{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  /* background-color: aqua; */
+}
+
+
+
+.btn1{
+  /* 调整边距 */
+  padding-top: 25rpx;
+  padding-bottom: 25rpx;
+  padding-left: 0rpx;
+  padding-right: 0rpx;
+  border-radius: 3px;
+  background-color: #168AF7;
+  font-weight: 500;
+  font-size: small;
+  color: white;
+}
+
+.btn2{
+  /* 调整边距 */
+  padding-top: 25rpx;
+  padding-bottom: 25rpx;
+  padding-left: 0rpx;
+  padding-right: 0rpx;
+  border-radius: 3px;
+  background-color: rgb(253, 152, 106);
+  font-weight: 500;
+  font-size: small;
+  color: white;
+}
+
+.btn3{
+  /* 调整边距 */
+  padding-top: 25rpx;
+  padding-bottom: 25rpx;
+  padding-left: 0rpx;
+  padding-right: 0rpx;
+  border-radius: 3px;
+  background-color: #06C061;
+  font-weight: 500;
+  font-size: small;
+  color: white;
+}
+
+.btn-group > button{
+  width: 5rem;
+}
+
+@keyframes pass-ani {
+  from {scale: 1 1;}
+  to {scale: 1.5 1.5;}
+}
+
+/* pass图标动画样式 */
+.pass-animation{
+  animation: pass-ani 1s alternate infinite;
+}
